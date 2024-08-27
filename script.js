@@ -36,7 +36,7 @@ const decryptFun = (string) => {
 document.querySelector("button:nth-of-type(1)").onclick = encryptFun; // Encriptar
 document.querySelector("button:nth-of-type(2)").onclick = () => {
     if (encryptResultText.value === '' && encryptText.value.length !== 0) {
-        encryptText.value = decryptFun(encryptResultText.value);
+        encryptResultText.value = decryptFun(encryptText.value);
     } else {
         encryptResultText.value = decryptFun(encryptResultText.value);
     }
